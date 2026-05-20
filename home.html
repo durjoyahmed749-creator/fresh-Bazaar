@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফ্রেশ অর্গানিক বাজার - শাকসবজি ও ফলমূল</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফ্রেশ অর্গানিক বাজার - শাকসবজি ও ফলমূল</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .category-title {
+            color: #2e7d32;
+            border-bottom: 3px solid #81c784;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1-fr));
+            gap: 25px;
+            margin-bottom: 5px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #e53935;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        .order-btn:hover {
+            background-color: #388e3c;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 ফ্রেশ অর্গানিক বাজার 🌿</h1>
+        <p>১০০% খাঁটি ও বিষমুক্ত শাকসবজি এবং ফলমূলের নির্ভরযোগ্য প্রতিষ্ঠান</p>
+    </header>
+
+    <div class="banner">
+        <h2>বাগান থেকে সরাসরি আপনার রান্নাঘরে</h2>
+        <p>রমজান ও গরমের স্পেশাল অফারে চলছে তাজা আম এবং লিচু!</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- শাকসবজি সেকশন -->
+        <h3 class="category-title">তাজা শাকসবজি</h3>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=500&q=80" alt="টমেটো" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">অর্গানিক টমেটো</div>
+                    <div class="product-price">৳৮০ / কেজি</div>
+                    <button class="order-btn" onclick="sendOrder('অর্গানিক টমেটো', '৳৮০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1566393028639-d108a42c46a7?auto=format&fit=crop&w=500&q=80" alt="আলু" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">দেশী আলু</div>
+                    <div class="product-price">৳৪০ / কেজি</div>
+                    <button class="order-btn" onclick="sendOrder('দেশী আলু', '৳৪০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- ফলমূল সেকশন -->
+        <h3 class="category-title">মৌসুমী ফল (আম ও লিচু)</h3>
+        <div class="product-grid">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=500&q=80" alt="আম" class="product-image">
+                    <div class="product-info">
+                        <div class="product-title">রাজশাহী হিমসাগর আম</div>
+                        <div class="product-price">৳১২০ / কেজি</div>
+                        <button class="order-btn" onclick="sendOrder('রাজশাহী হিমসাগর আম', '৳১২০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80" alt="লিচু" class="product-image">
+                    <div class="product-info">
+                        <div class="product-title">দিনাজপুরের বোম্বাই লিচু</div>
+                        <div class="product-price">৳৪০০ / ১০০ পিস</div>
+                        <button class="order-btn" onclick="sendOrder('দিনাজপুরের বোম্বাই লিচু', '৳৪০০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ ফ্রেশ অর্গানিক বাজার | সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        // আপনার হোয়াটসঅ্যাপ নাম্বার এখানে দিন (কান্ট্রি কোড সহ, যেমন: 88017XXXXXXXX)
+        const myWhatsAppNumber = "8801700000000"; 
+
+        function sendOrder(productName, price) {
+            const message = `হ্যালো, আমি ফ্রেশ অর্গানিক বাজার থেকে এই প্রোডাক্টটি অর্ডার করতে চাই:\n\n` +
+                            `📦 প্রোডাক্ট: ${productName}\n` +
+                            `💰 মূল্য: ${price}\n\n` +
+                            `দয়া করে আমার অর্ডারটি কনফার্ম করুন।`;
+            
+            // হোয়াটসঅ্যাপ ইউআরএল তৈরি
+            const whatsappUrl = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+            
+            // নতুন ট্যাবে হোয়াটসঅ্যাপ ওপেন হবে
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
+, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .category-title {
+            color: #2e7d32;
+            border-bottom: 3px solid #81c784;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1-fr));
+            gap: 25px;
+            margin-bottom: 5px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #e53935;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        .order-btn:hover {
+            background-color: #388e3c;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 ফ্রেশ অর্গানিক বাজার 🌿</h1>
+        <p>১০০% খাঁটি ও বিষমুক্ত শাকসবজি এবং ফলমূলের নির্ভরযোগ্য প্রতিষ্ঠান</p>
+    </header>
+
+    <div class="banner">
+        <h2>বাগান থেকে সরাসরি আপনার রান্নাঘরে</h2>
+        <p>রমজান ও গরমের স্পেশাল অফারে চলছে তাজা আম এবং লিচু!</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- শাকসবজি সেকশন -->
+        <h3 class="category-title">তাজা শাকসবজি</h3>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=500&q=80" alt="টমেটো" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">অর্গানিক টমেটো</div>
+                    <div class="product-price">৳৮০ / কেজি</div>
+                    <button class="order-btn" onclick="sendOrder('অর্গানিক টমেটো', '৳৮০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1566393028639-d108a42c46a7?auto=format&fit=crop&w=500&q=80" alt="আলু" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">দেশী আলু</div>
+                    <div class="product-price">৳৪০ / কেজি</div>
+                    <button class="order-btn" onclick="sendOrder('দেশী আলু', '৳৪০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- ফলমূল সেকশন -->
+        <h3 class="category-title">মৌসুমী ফল (আম ও লিচু)</h3>
+        <div class="product-grid">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=500&q=80" alt="আম" class="product-image">
+                    <div class="product-info">
+                        <div class="product-title">রাজশাহী হিমসাগর আম</div>
+                        <div class="product-price">৳১২০ / কেজি</div>
+                        <button class="order-btn" onclick="sendOrder('রাজশাহী হিমসাগর আম', '৳১২০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80" alt="লিচু" class="product-image">
+                    <div class="product-info">
+                        <div class="product-title">দিনাজপুরের বোম্বাই লিচু</div>
+                        <div class="product-price">৳৪০০ / ১০০ পিস</div>
+                        <button class="order-btn" onclick="sendOrder('দিনাজপুরের বোম্বাই লিচু', '৳৪০০')">হোয়াটসঅ্যাপে অর্ডার করুন</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ ফ্রেশ অর্গানিক বাজার | সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        // আপনার হোয়াটসঅ্যাপ নাম্বার এখানে দিন (কান্ট্রি কোড সহ, যেমন: 88017XXXXXXXX)
+        const myWhatsAppNumber = "8801700000000"; 
+
+        function sendOrder(productName, price) {
+            const message = `হ্যালো, আমি ফ্রেশ অর্গানিক বাজার থেকে এই প্রোডাক্টটি অর্ডার করতে চাই:\n\n` +
+                            `📦 প্রোডাক্ট: ${productName}\n` +
+                            `💰 মূল্য: ${price}\n\n` +
+                            `দয়া করে আমার অর্ডারটি কনফার্ম করুন।`;
+            
+            // হোয়াটসঅ্যাপ ইউআরএল তৈরি
+            const whatsappUrl = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+            
+            // নতুন ট্যাবে হোয়াটসঅ্যাপ ওপেন হবে
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>01305439580
